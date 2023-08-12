@@ -23,7 +23,8 @@ app. listen(3000, ()=>{
 })
 */
 
-// 3-6 code
+
+// 3-6 code edited code
 app.get(`${api}/products`, (req, res) => {
     const product = {
         id: 1,
