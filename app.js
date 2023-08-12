@@ -1,13 +1,14 @@
 // console.log("hello world");
 const express = require("express");
 const app = express();
-
+const morgan = require ('morgan');
 require("dotenv/config");
 
 const api = process.env.API_URL;
 
 //Middleware --> previous body parser
 app.use(express.json());
+app.use(morgan ('tiny'));
 // http://localhost:3000/api/v1/products
 //Create a sample get request to route /
 
